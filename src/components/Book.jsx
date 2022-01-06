@@ -1,11 +1,11 @@
 const Book = ({ book }) => {
   return (
-    <div className="container">
+    <>
       {
         book.map((book, index) => {
           return (
             <div className="book" key={index}>
-              <div className="title">
+              <div className="title-container">
                 <h1>{book.title}</h1>
               </div>
               <div className="book-info">
@@ -20,7 +20,7 @@ const Book = ({ book }) => {
           )
         })
       }
-    </div>
+    </>
   );
 };
 export default Book;
